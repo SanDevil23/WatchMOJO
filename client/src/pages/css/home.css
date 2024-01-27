@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+}
+
+.home-logo{
+    padding: 21px;
+    color: rgb(187, 209, 227);
+    background-color: rgb(177, 38, 117);
+    box-shadow: 10px 10px rgb(255, 255, 255) ;
+}
+
+
+.home-landing{
+    background-image: url("https://www.xrtoday.com/wp-content/uploads/2023/05/How-is-Immersive-Filmmaking-Changing-the-Entertainment-Industry-XR-Today-News.jpg");
+}
+
+#msg1,#msg2{
+    padding-left: 17em;
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+}
