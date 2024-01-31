@@ -16,7 +16,7 @@ const Home = () => {
         <div className="msg-box">
           <p id="msg1">Unlimited Entertainment</p>
           <p id="msg2">Binge Watch your favorite shows and movies </p>
-          <button id="prv">Get Started </button>
+          <button id="prv"><a href="/trial">Get Started</a></button>
         </div>
       </div>
     </div>
