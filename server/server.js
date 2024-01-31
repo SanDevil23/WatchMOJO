@@ -17,20 +17,12 @@ const options = {
 app.get("/", async (req, res) => {
   try {
     const response = await axios.request(options);
-    const result = await response.data.JSON;
-    console.log(response.data);
     res.send(response.data);
-
   } catch (error) {
     console.error(error);
   }
 });
 
-
-app.get("/ln", (req, res) => {
-    console.log("I am greta");
-    res.send("The App is running");
-});
 
 
 app.listen(port, () => {
