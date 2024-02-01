@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./css/imdb.css";
 import axios from "axios";
 
 
