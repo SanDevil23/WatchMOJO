@@ -1,5 +1,4 @@
 import React from "react";
-import "./css/home.css";
 import Login from "../components/Login";
 import { useState } from 'react'
 const Home = () => {
