@@ -1,12 +1,10 @@
-import React from 'react'
-import Imdb from '../components/Imdb'
+import React from "react";
+import Imdb from "../components/Imdb";
+import SignUp from "../components/SignUp";
+import Login from "../components/Login";
 
 const Free = () => {
-  return (
-    <div>
-      <h1>Trial Page</h1>
-    </div>
-  )
-}
+  return <SignUp />;
+};
 
-export default Free
+export default Free;

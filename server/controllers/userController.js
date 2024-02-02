@@ -16,7 +16,31 @@ exports.register = async (req, res) => {
 
 
 exports.login = async (req, res) => {
+  
+  try{
+    const {name, password} = req.body
+    const userExists = User.find({name: name});
+    if (userExists) {
+      const isPasswordCorrect = await bcrypt.compare(
+        password,
+        userExists.password
+      );
+      if (isPasswordCorrect) {
+        userExists.password = "";
+        console.log(doesUser)
+        res.json({ msg: "login sucessfull", status: 200, usr: userExists });
+        return;
+      } else {
+        res.json({ msg: "incorrect password", status: 500 });
+        return;
+      }
 
+    }else{
+      res.status(500).json("user not register");
+    }
+  }catch(err){
+    res.status(500).json("error logging in")
+  }
 }
 
 
