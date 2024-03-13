@@ -6,7 +6,7 @@ const MiddleComp = () => {
             <div className="bg-gray-900 min-h-screen flex items-center justify-center">
         <div className="max-w-4xl w-full px-4 text-center">
           <h1 className="text-4xl font-bold text-white mb-6">
-            Welcome to our Video Website
+            Welcome to our Streaming Website
           </h1>
           <p className="text-lg text-gray-400 mb-8">
             Discover amazing videos and enjoy endless entertainment.
