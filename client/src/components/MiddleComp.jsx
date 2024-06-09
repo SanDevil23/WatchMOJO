@@ -12,18 +12,22 @@ const MiddleComp = () => {
             Discover amazing videos and enjoy endless entertainment.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-white rounded-lg p-4">
+            <div className="bg-lime-500 rounded-lg p-4">
               <h2 className="text-xl font-semibold mb-4">Trending Videos</h2>
               {/* Place trending videos here */}
             </div>
-            <div className="bg-white rounded-lg p-4">
+            <div className="bg-purple-500 rounded-lg p-4">
               <h2 className="text-xl font-semibold mb-4">Featured Videos</h2>
               {/* Place featured videos here */}
             </div>
-            <div className="bg-white  text-center rounded-lg p-8">
+            <div className="bg-red-400  text-center rounded-lg p-8">
               <h2 className="text-xl font-semibold mb-4">Recommended Videos</h2>
               {/* Place recommended videos here */}
             </div>
+          </div>
+
+          <div>
+              {/* <button className='text-white'><a href="/watch-console">Watch Now</a></button> */}
           </div>
         </div>
       </div>
