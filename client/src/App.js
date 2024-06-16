@@ -4,7 +4,8 @@ import "./App.css";
 import Home from "./pages/Home";
 import Free from "./pages/Free";
 import Register from "./pages/Register";
-import Screen from "./components/Screen";
+import VideoPlayer from "./pages/VideoPlayer";
+import Main from "./pages/Main";
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/trial" element={<Free />} />
         <Route path="/register" element={<Register />}></Route>
-        <Route path="/watch-console" element={<Screen />}></Route>
+        <Route path="/watch-console" element={<VideoPlayer />}></Route>
+        <Route path="/v1" element={<Main />}></Route>
+      
       </Routes>
     </BrowserRouter>
   );

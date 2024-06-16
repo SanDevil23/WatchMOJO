@@ -24,8 +24,8 @@ const Screen = () => {
           <button className=" bg-black p-2 rounded-md mt-1 w-20 ml-1"><a href="/">Back</a></button>
 
         </div>
-        <div className="flex bg-black justify-center">
-                <ReactPlayer url={link} controls='true' width="100vw" height="75vh" />
+        <div className="flex justify-center">
+                <ReactPlayer url={link} controls='true' width="95vw" height="75vh" />
         </div>
         <div className='text-white p-10'>
         <h1 className='text-2xl text-orange-50'>Description</h1>
