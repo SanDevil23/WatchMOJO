@@ -1,15 +1,13 @@
-package com.example.database_connection;
+package com.ott.mysql_database;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-// application class 
 @SpringBootApplication
-public class DatabaseConnectionApplication {
+public class MysqlDatabaseApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DatabaseConnectionApplication.class, args);
+		SpringApplication.run(MysqlDatabaseApplication.class, args);
 	}
 
 }

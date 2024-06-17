@@ -1,5 +1,4 @@
-package com.example.database_connection;
-
+package com.ott.mysql_database;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,19 +17,20 @@ public class MainController {
 
   @PostMapping(path="/add") // Map ONLY POST Requests
   public @ResponseBody String addNewUser (@RequestParam String name
-      , @RequestParam String email) {
+      , @RequestParam String email, @RequestParam String gender) {
     // @ResponseBody means the returned String is the response, not a view name
     // @RequestParam means it is a parameter from the GET or POST request
 
-    Employee n = new Employee();
-    n.setE_name(name);
+    User n = new User();
+    n.setUserName(name);
     n.setEmail(email);
+    n.setGender(gender);
     userRepository.save(n);
     return "Saved";
   }
 
   @GetMapping(path="/all")
-  public @ResponseBody Iterable<Employee> getAllUsers() {
+  public @ResponseBody Iterable<User> getAllUsers() {
     // This returns a JSON or XML with the users
     return userRepository.findAll();
   }
